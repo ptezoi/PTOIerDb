@@ -16,8 +16,8 @@ const SchoolList: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const province = provinces.includes(searchParams.get('province') as any)
     ? searchParams.get('province')
-    : '全国';
-  const isWholeCountry = province === '全国';
+    : '福建省莆田市';
+  const isWholeCountry = province === '福建省莆田市';
 
   const data = useMemo(
     () =>
@@ -41,7 +41,7 @@ const SchoolList: React.FC = () => {
           search
           compact
           value={province}
-          options={['全国', ...provinces].map((province) => ({
+          options={['福建省莆田市', ...provinces].map((province) => ({
             key: province,
             value: province,
             text: province,
@@ -62,7 +62,7 @@ const SchoolList: React.FC = () => {
             </Table.HeaderCell>
             {!isWholeCountry && (
               <Table.HeaderCell width={2} textAlign="center">
-                全国排名
+                莆田市排名
               </Table.HeaderCell>
             )}
             <Table.HeaderCell>学校</Table.HeaderCell>

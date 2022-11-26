@@ -24,7 +24,7 @@ const PersonCard: React.FC<PersonCardProps> = (props) => {
           <Table.Cell>{oier.provinces.join('/')}</Table.Cell>
           <Table.Cell>{getGrade(oier)}</Table.Cell>
           <Table.Cell>{oier.oierdb_score.toFixed(2)}</Table.Cell>
-          <Table.Cell>{oier.ccf_level}</Table.Cell>
+          <Table.Cell>无数据</Table.Cell>
         </>
       )}
     </Table.Row>

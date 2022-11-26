@@ -16,8 +16,8 @@ const OIerList: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const province = provinces.includes(searchParams.get('province') as any)
     ? searchParams.get('province')
-    : '全国';
-  const isWholeCountry = province === '全国';
+    : '福建省莆田市';
+  const isWholeCountry = province === '福建省莆田市';
 
   const data = useMemo(
     () =>
@@ -41,7 +41,7 @@ const OIerList: React.FC = () => {
           search
           compact
           value={province}
-          options={['全国', ...provinces].map((province) => ({
+          options={['福建省莆田市', ...provinces].map((province) => ({
             key: province,
             value: province,
             text: province,
@@ -62,7 +62,7 @@ const OIerList: React.FC = () => {
             </Table.HeaderCell>
             {!isWholeCountry && (
               <Table.HeaderCell width={2} textAlign="center">
-                全国排名
+                莆田市排名
               </Table.HeaderCell>
             )}
             <Table.HeaderCell>姓名</Table.HeaderCell>
@@ -89,7 +89,7 @@ const OIerList: React.FC = () => {
                 </Table.Cell>
                 <Table.Cell>{oier.provinces.join('、')}</Table.Cell>
                 <Table.Cell>{oier.oierdb_score}</Table.Cell>
-                <Table.Cell>{oier.ccf_level}</Table.Cell>
+                <Table.Cell>无数据</Table.Cell>
               </Table.Row>
             ))}
         </Table.Body>

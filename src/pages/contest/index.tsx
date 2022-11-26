@@ -26,7 +26,7 @@ const Contests: React.FC = () => {
           <Table.Row>
             <Table.HeaderCell width={1}>#</Table.HeaderCell>
             <Table.HeaderCell>名称</Table.HeaderCell>
-            <Table.HeaderCell width={2}>获奖人数</Table.HeaderCell>
+            <Table.HeaderCell width={2}>莆田市获奖人数</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>

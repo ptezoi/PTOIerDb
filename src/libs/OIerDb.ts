@@ -397,7 +397,7 @@ export const initDb = async (setProgressPercent?: (p: number) => void) => {
   setProgressPercent(10);
 
   const staticData = await getData(
-    urls.map((url) => `${url}/static.${staticSha512.substring(0, 7)}.json`),
+    urls.map((url) => `${url}/static.json`),
     staticSize,
     setProgressPercent,
     10,
@@ -406,7 +406,7 @@ export const initDb = async (setProgressPercent?: (p: number) => void) => {
   ).then((res) => JSON.parse(res));
 
   const oiers = await getData(
-    urls.map((url) => `${url}/result.${resultSha512.substring(0, 7)}.txt`),
+    urls.map((url) => `${url}/result.txt`),
     resultSize,
     setProgressPercent,
     40,

@@ -65,7 +65,7 @@ const PersonInfo: React.FC<PersonInfoProps> = (props) => {
           <Table.Row>
             <Table.HeaderCell>奖项</Table.HeaderCell>
             <Table.HeaderCell>分数</Table.HeaderCell>
-            <Table.HeaderCell>选手莆田市排名</Table.HeaderCell>
+            <Table.HeaderCell>全市排名</Table.HeaderCell>
             <Table.HeaderCell>省份</Table.HeaderCell>
             <Table.HeaderCell>就读学校</Table.HeaderCell>
             <Table.HeaderCell>年级</Table.HeaderCell>

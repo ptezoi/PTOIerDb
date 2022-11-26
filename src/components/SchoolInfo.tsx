@@ -177,7 +177,7 @@ const SchoolInfo: React.FC<SchoolProps> = ({ school }) => {
             <Table.HeaderCell width={1}>#</Table.HeaderCell>
             <Table.HeaderCell>姓名</Table.HeaderCell>
             <Table.HeaderCell>年级</Table.HeaderCell>
-            <Table.HeaderCell width={2}>全国排名</Table.HeaderCell>
+            <Table.HeaderCell width={2}>莆田市排名</Table.HeaderCell>
             <Table.HeaderCell width={2}>评分</Table.HeaderCell>
             <Table.HeaderCell width={2}>CCF 评级</Table.HeaderCell>
           </Table.Row>
@@ -196,7 +196,7 @@ const SchoolInfo: React.FC<SchoolProps> = ({ school }) => {
                     <Table.Cell>{getGrade(oier)}</Table.Cell>
                     <Table.Cell>{oier.rank + 1}</Table.Cell>
                     <Table.Cell>{oier.oierdb_score.toFixed(2)}</Table.Cell>
-                    <Table.Cell>{oier.ccf_level}</Table.Cell>
+                    <Table.Cell>无数据</Table.Cell>
                   </>
                 }
               />

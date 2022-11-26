@@ -92,14 +92,11 @@ export interface OIerDbData {
 }
 
 const infoUrls = [
-  'https://oier.api.baoshuo.dev',
-  'https://oierdb-ng.github.io/OIerDb-data-generator',
+  'https://cdn.ptezoj.com/ptoierdb',
 ];
 
 const urls = [
-  'https://sb.cdn.baoshuo.ren/oier',
-  'https://oier.api.baoshuo.dev',
-  'https://oierdb-ng.github.io/OIerDb-data-generator',
+  'https://cdn.ptezoj.com/ptoierdb',
 ];
 
 let __DATA__: OIerDbData = null;
@@ -400,7 +397,7 @@ export const initDb = async (setProgressPercent?: (p: number) => void) => {
   setProgressPercent(10);
 
   const staticData = await getData(
-    urls.map((url) => `${url}/static.${staticSha512.substring(0, 7)}.json`),
+    urls.map((url) => `${url}/static.json`),
     staticSize,
     setProgressPercent,
     10,
@@ -409,7 +406,7 @@ export const initDb = async (setProgressPercent?: (p: number) => void) => {
   ).then((res) => JSON.parse(res));
 
   const oiers = await getData(
-    urls.map((url) => `${url}/result.${resultSha512.substring(0, 7)}.txt`),
+    urls.map((url) => `${url}/result.txt`),
     resultSize,
     setProgressPercent,
     40,
@@ -439,40 +436,7 @@ export const initDb = async (setProgressPercent?: (p: number) => void) => {
 
 // 省份列表
 export const provinces = [
-  '安徽',
-  '北京',
-  '福建',
-  '甘肃',
-  '广东',
-  '广西',
-  '贵州',
-  '海南',
-  '河北',
-  '河南',
-  '黑龙江',
-  '湖北',
-  '湖南',
-  '吉林',
-  '江苏',
-  '江西',
-  '辽宁',
-  '内蒙古',
-  '山东',
-  '山西',
-  '陕西',
-  '上海',
-  '四川',
-  '天津',
-  '新疆',
-  '浙江',
-  '重庆',
-  '宁夏',
-  '云南',
-  '澳门',
-  '香港',
-  '青海',
-  '西藏',
-  '台湾',
+  '福建省莆田市',
 ] as const;
 
 // 奖项列表及颜色
@@ -486,5 +450,6 @@ export const awardColors = {
     国际金牌: '#ee961b',
     国际银牌: '#939291',
     国际铜牌: '#9c593b',
+    '全国前25%': '#9c593b',
   },
   awardLevels = Object.keys(awardColors);

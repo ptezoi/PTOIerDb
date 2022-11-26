@@ -15,7 +15,7 @@ const AboutHeader: React.FC = () => (
     />
     <h1 style={{ textAlign: 'center' }}>OIerDb</h1>
     <p style={{ textAlign: 'center' }}>
-      OIerDb 是中国信息学竞赛选手的一个数据库
+      PTOIerDb 是福建省莆田市信息学竞赛选手的一个数据库
       <br />
       <small>OIerDb is a database for Chinese OI participants</small>
     </p>
@@ -49,6 +49,9 @@ const Developers = () => (
         </li>
         <li>
           <a href="https://github.com/yhx-12243">yhx-12243</a>
+        </li>
+        <li>
+          <a href="https://github.com/ptezoi">莆田二中算法协会</a>
         </li>
       </ul>
       <p>以上排名不分先后，感谢他们的贡献。</p>

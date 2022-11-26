@@ -66,7 +66,7 @@ const Header: React.FC = () => {
           <Menu.Item as={Link} to="/">
             <img src="/logo.png" style={{ marginRight: '0.75em' }} />
             <div style={{ fontSize: '20px' }}>
-              <b>OIerDb</b>
+              <b>莆田市信息学竞赛选手数据库</b>
             </div>
           </Menu.Item>
           {(wide &&

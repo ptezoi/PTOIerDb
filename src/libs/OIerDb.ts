@@ -92,11 +92,11 @@ export interface OIerDbData {
 }
 
 const infoUrls = [
-  'http://oier.ptezoj.com',
+  'https://www.ptezoj.com/ptoierdb',
 ];
 
 const urls = [
-  'http://oier.ptezoj.com',
+  'https://www.ptezoj.com/ptoierdb',
 ];
 
 let __DATA__: OIerDbData = null;

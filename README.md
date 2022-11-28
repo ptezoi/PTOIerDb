@@ -1,10 +1,10 @@
 <p align="center"><img src="public/logo.png"></p>
 
-<h1 align="center">OIerDb NG</h1>
+<h1 align="center">PTOIerDb NG</h1>
 
 > 下一代的 OIerDb。
 
-演示站点：[oier.baoshuo.dev](https://oier.baoshuo.dev)
+演示站点：[oier.ptezoj.com](https://oier.ptezoj.com) / [oier.baoshuo.dev](https://oier.baoshuo.dev)
 
 本项目是 [OIerDb-ng/OIer@oierdb-ng](https://github.com/OIerDb-ng/OIer) 的前端实现。目前使用在 [OIerDb-ng/OIerDb-data-generator](https://github.com/OIerDb-ng/OIerDb-data-generator) 中维护的选手数据。
 

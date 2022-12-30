@@ -58,7 +58,7 @@ const PersonInfo: React.FC<PersonInfoProps> = (props) => {
         </Link>
         （{oier.oierdb_score} 分）。
       </p>
-      <p>CCF 程序设计能力等级：? 级（仅供参考）。</p>
+      <p>CCF 程序设计能力等级：{oier.ccf_level} 级（仅供参考）。</p>
       <h4>获奖信息</h4>
       <Table basic="very" unstackable>
         <Table.Header>

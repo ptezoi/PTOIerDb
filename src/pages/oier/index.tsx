@@ -89,7 +89,7 @@ const OIerList: React.FC = () => {
                 </Table.Cell>
                 <Table.Cell>{oier.provinces.join('、')}</Table.Cell>
                 <Table.Cell>{oier.oierdb_score}</Table.Cell>
-                <Table.Cell>无数据</Table.Cell>
+                <Table.Cell>{oier.ccf_level}</Table.Cell>
               </Table.Row>
             ))}
         </Table.Body>

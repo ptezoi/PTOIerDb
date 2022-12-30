@@ -196,7 +196,7 @@ const SchoolInfo: React.FC<SchoolProps> = ({ school }) => {
                     <Table.Cell>{getGrade(oier)}</Table.Cell>
                     <Table.Cell>{oier.rank + 1}</Table.Cell>
                     <Table.Cell>{oier.oierdb_score.toFixed(2)}</Table.Cell>
-                    <Table.Cell>无数据</Table.Cell>
+                    <Table.Cell>{oier.ccf_level}</Table.Cell>
                   </>
                 }
               />
